@@ -4,15 +4,15 @@
 # ------------------------------------------------
 
 # The filename of your content image
-CONTENT_IMAGE=content-blur-2.jpg
+CONTENT_IMAGE=content-landscape.jpg
 
 # The filename of your style image
-STYLE_IMAGE=style-paint-4.jpg
+STYLE_IMAGE=content-motion-2.jpg
 
 # Parameters
-STYLE_WEIGHT=8e3          # 5e2 (1e0 > 10e5)
-CONTENT_WEIGHT=2e3        # 5e0 (1e0 > 10e5)
-STYLE_SCALE=0.7           # 1.0 (0.1 > 2.0)
+STYLE_WEIGHT=5e2          # 5e2 (1e0 > 10e5)
+CONTENT_WEIGHT=5e0        # 5e0 (1e0 > 10e5)
+STYLE_SCALE=1.0           # 1.0 (0.1 > 2.0)
 
 # Advanced Parameters
 ORIGINAL_COLORS=0         # 0 ( 0 | 1 )
@@ -61,7 +61,7 @@ esac
 USER_NAME=${PWD##*/}
 SCRIPT_NAME=`basename "$0"`
 IMAGE_PATH=./pictures/
-NEURALSTYLE=~/neural-style/
+NEURALSTYLE=~/code/neural-style/
 
 # Generate project name
 suffix=""
